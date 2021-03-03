@@ -1,7 +1,7 @@
 %global module	redisearch
 Name:		RediSearch
 Version:	2.0.5
-Release:	4%{?dist}
+Release:	1%{?dist}
 Summary:	Full-text search over Redis
 
 %global disable_tests 0
