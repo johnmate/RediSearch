@@ -16,11 +16,7 @@ ExclusiveArch:  x86_64
 BuildRequires: make
 BuildRequires:	gcc
 BuildRequires:	git
-BuildRequires:	python3
-BuildRequires:	python3-rmtest >= 1
-BuildRequires:	redis-devel
-BuildRequires:	redis >= 4
-Requires:	redis >= 4
+Requires:	redis >= 5
 Requires:	redis(modules_abi)%{?_isa} = %{redis_modules_abi}
 
 %description
