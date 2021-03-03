@@ -32,12 +32,7 @@ efficient with traditional Redis search approaches.
 %setup -q
 
 %build
-make %{?_smp_mflags} LD="cc" LDFLAGS="%{?__global_ldflags}"
-
-%if !%{disable_tests}
-%check
-make PYTHON="python3" test
-%endif
+make build
 
 %install
 mkdir -p %{buildroot}%{redis_modules_dir}
