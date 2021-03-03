@@ -32,6 +32,7 @@ efficient with traditional Redis search approaches.
 %setup -q
 
 %build
+make setup
 make build
 
 %install
