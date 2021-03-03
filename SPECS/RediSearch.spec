@@ -14,8 +14,10 @@ Source0:	https://github.com/%{name}/%{name}/archive/v%{version}.tar.gz
 ExclusiveArch:  x86_64
 
 BuildRequires: make
-BuildRequires:	gcc
-BuildRequires:	git
+BuildRequires: cmake
+BuildRequires: python2
+BuildRequires: gcc
+BuildRequires: git
 Requires:	redis >= 5
 Requires:	redis(modules_abi)%{?_isa} = %{redis_modules_abi}
 
