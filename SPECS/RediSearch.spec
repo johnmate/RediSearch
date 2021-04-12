@@ -35,6 +35,7 @@ efficient with traditional Redis search approaches.
 
 %build
 make setup
+make fetch
 make build
 
 %install
