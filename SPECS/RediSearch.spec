@@ -49,8 +49,8 @@ install -pDm755 src/%{module}.so %{buildroot}%{redis_modules_dir}/%{module}.so
 %{redis_modules_dir}/%{module}.so
 
 %changelog
-* Wed Mar 03 2021 johnmate <rokha.evgeny@gmail.com> - 2.0.5-1
-- Initial package
-
 * Mon Apr 12 2021 johnmate <rokha.evgeny@gmail.com> - 2.0.6-1
 - Update to 2.0.6
+
+* Wed Mar 03 2021 johnmate <rokha.evgeny@gmail.com> - 2.0.5-1
+- Initial package
