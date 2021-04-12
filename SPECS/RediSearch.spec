@@ -1,6 +1,6 @@
 %global module	redisearch
 Name:		RediSearch
-Version:	2.0.5
+Version:	2.0.6
 Release:	1%{?dist}
 Summary:	Full-text search over Redis
 
@@ -34,8 +34,8 @@ efficient with traditional Redis search approaches.
 %setup -q
 
 %build
-make setup
 make fetch
+make setup
 make build
 
 %install
@@ -51,3 +51,6 @@ install -pDm755 src/%{module}.so %{buildroot}%{redis_modules_dir}/%{module}.so
 %changelog
 * Wed Mar 03 2021 johnmate <rokha.evgeny@gmail.com> - 2.0.5-1
 - Initial package
+
+* Mon Apr 14 2021 johnmate <rokha.evgeny@gmail.com> - 2.0.6-1
+- Update to 2.0.6
