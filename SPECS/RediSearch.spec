@@ -7,8 +7,8 @@ Summary:	Full-text search over Redis
 %global disable_tests 0
 
 License:	AGPLv3
-URL:		https://github.com/johnmate/RediSearch
-Source0:	https://github.com/%{name}/%{name}/archive/v%{version}.tar.gz
+URL:		https://github.com/johnmate/%{name}
+Source0:	https://github.com/johnmate/%{name}/raw/main/SRC/%{name}-%{version}.tar.gz
 
 # "RediSearch is developed and tested on Linux and Mac OS, on x86_64 CPUs." from docs/index.md
 ExclusiveArch:  x86_64
@@ -34,7 +34,6 @@ efficient with traditional Redis search approaches.
 %setup -q
 
 %build
-make fetch
 make setup
 make build
 
